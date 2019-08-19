@@ -1,0 +1,21 @@
+alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+escolha = input("Deseja criptografar ou descriptografar ?: \n")
+texto = input("Digite o texto: \n")
+key = int(input("Digite a key: \n"))
+qtd = len(texto)
+new_text = ""
+try:
+    if escolha == "criptografar":
+        for x in range(qtd):
+            location = alfabeto.find(texto[x])
+            new_location = (location + key) % 53
+            new_text += alfabeto[new_location]
+
+    if escolha == "descriptografar":
+        for x in range(qtd):
+            location = alfabeto.find(texto[x])
+            new_location = (location - key) % 53
+            new_text += alfabeto[new_location]
+    print(new_text)
+except ValueError:
+    print("Digite letras")
