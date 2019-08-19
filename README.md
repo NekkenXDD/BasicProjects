@@ -1,4 +1,4 @@
 # Cauã-Matheus
 
-Esse Github foi criado apenas para eu me divertir com as programações, veja alguns dos meus programas e se divirta.
-(A maioria é na linguagem Python)
+Esse Github foi criado apenas para eu me divertir com as programações, veja alguns dos meus programas e se divirta. \n
+(A maioria foi criado na na linguagem Python)
