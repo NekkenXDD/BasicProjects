@@ -1,0 +1,30 @@
+from time import sleep
+alfabeto = "abcdefghijklmnopqrstuvwxyz "
+new_text = ""
+new_text2 = ""
+new_text3 = ""
+texto = "fkikvgbugwbpqogb"
+texto2 = "fkikvgbcbeqtbfgbuwcbewgecbrqtbhcxqtb"
+texto3 = "kkkkkjbvcbwucpfqbewgswkpjcb"
+qtd = len(texto)
+qtd2 = len(texto2)
+qtd3 = len(texto3)
+print("Digite tudo em letras minúsculas e sem acento, por favor")
+for x in range(qtd):
+    location = alfabeto.find(texto[x])
+    new_location = (location - 2) % 27
+    new_text += alfabeto[new_location]
+for x in range(qtd2):
+    location2 = alfabeto.find(texto2[x])
+    new_location2 = (location2 - 2) % 27
+    new_text2 += alfabeto[new_location2]
+for x in range(qtd3):
+    location3 = alfabeto.find(texto3[x])
+    new_location3 = (location3 - 2) % 27
+    new_text3 += alfabeto[new_location3]
+
+n = input(f"{new_text}")
+c = input(f"{new_text2}")
+print(f"{n}...")
+sleep(2)
+print(f"{new_text3}{c} kkkkkkkkkkkkkk")
