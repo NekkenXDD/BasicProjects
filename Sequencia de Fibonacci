@@ -1,9 +1,12 @@
-x = int(input("Digite um numero: "))
-count = x
+count = int(input("Digite um numero: "))
 Numeros = "0, "
+
+// Numeros base
 num = 0
 num2 = 0
 num3 = 1
+
+// Criador da sequencia
 while count >= 0:
     if count > 0:
         count -= 1
@@ -19,4 +22,7 @@ while count >= 0:
         num = num2
         num2 = num3
         num3 = num + num2
+        
+        
+// Resultado
 print(Numeros)
